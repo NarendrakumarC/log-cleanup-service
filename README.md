@@ -55,11 +55,13 @@ Required Methods:
 
 Write the following exact content to the file:
 
-======= LOG CLEANUP OPERATION ========
+****** LOG CLEANUP OPERATION ********
+
 Timestamp: [current date and time]
 Operation: Scheduled Log Cleanup
 Files Deleted: [number of files deleted]
 Cutoff Date: [cutoff date and time]
 Retention Policy: [days-to-keep] days
 Status : SUCCESS
-=======================================
+
+************** END ********************
