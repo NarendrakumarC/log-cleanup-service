@@ -43,8 +43,9 @@ public class LogCleanUpService {
         }
     }
 
-    @Scheduled(cron = "${cleanup.cron-expression}")
+    @Scheduled(cron = "0 0/2 * * * ?")
     public void cleanOldLogs(){
+        System.out.println("Cron job running every 2 minutes: " + System.currentTimeMillis());
         Instant cutoff = Instant.now().minus(daysToKeep, java.time.temporal.ChronoUnit.DAYS);
         AtomicInteger count = new AtomicInteger();
         try{

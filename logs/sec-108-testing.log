@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": "Secure Notes Auth API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Signin",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\": \"string\", \"password\": \"string\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/auth/public/signin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "auth",
+                        "public",
+                        "signin"
+                    ]
+                }
+            }
+        }
+    ]
+}

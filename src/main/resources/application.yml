@@ -1,0 +1,21 @@
+cleanup:
+  log-directory: ./logs
+  days-to-keep: 1
+
+logging:
+    level:
+        root: INFO
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+file:
+  name: ./logs/app.log
+  max-size: 10MB
+  max-history: 30
+
+logback:
+  rollingpolicy:
+    file-name-pattern: ./logs/app-%d{yyyy-MM-dd}.log
+    max-file-size: 10MB
+    max-history: 30
